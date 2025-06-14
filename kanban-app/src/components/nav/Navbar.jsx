@@ -1,13 +1,15 @@
-import logo from "../../assets/logo.png"
-
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   return (
     <div id="navbar">
-        <img src={logo} alt="" />
-        <h1>K-Lane Board App</h1>
+      <Link to="/">
+        <img src={logo} alt="logo" />
+      </Link>
+      <h1>K-Lane Board App</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

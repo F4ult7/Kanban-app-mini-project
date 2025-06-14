@@ -11,6 +11,7 @@ const Content = () => {
 
   return (
     <div className="mainContentContainer">
+      {/* TO-DO CODE BLOCK */}
       <article id="article">
         <h2>To Do</h2>
         {tasks
@@ -22,10 +23,13 @@ const Content = () => {
                 priority={task.priority}
                 dueDate={task.dueDate}
                 handleDelete={() => handleDelete(task.id)}
+                _id={task.id}
               />
             </div>
           ))}
       </article>
+
+      {/* IN-PROGRESS CODE BLOCK  */}
       <article id="article">
         <h2>In Progress</h2>
         {tasks
@@ -41,6 +45,9 @@ const Content = () => {
             </div>
           ))}
       </article>
+
+
+      {/* DONE CODE BLOCK  */}
       <article id="article">
         <h2>Done</h2>
         {tasks
