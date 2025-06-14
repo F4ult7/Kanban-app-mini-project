@@ -41,6 +41,7 @@ const Content = () => {
                 priority={task.priority}
                 dueDate={task.dueDate}
                 handleDelete={() => handleDelete(task.id)}
+                _id={task.id}
               />
             </div>
           ))}
@@ -59,6 +60,7 @@ const Content = () => {
                 priority={task.priority}
                 dueDate={task.dueDate}
                 handleDelete={() => handleDelete(task.id)}
+                _id={task.id}
               />
             </div>
           ))}
