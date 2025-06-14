@@ -35,46 +35,43 @@ li{
   width: 100px;
 }
 
-
-
-footer{
+footer {
   background-color: rgb(184, 173, 173);
   height: 5vh;
   text-align: center;
-  
 }
 
-#footer-p{
- margin-top:0px;
- padding:22px;
+#footer-p {
+  margin-top: 0px;
+  padding: 22px;
 }
 
-#footer-p a{
+#footer-p a {
   text-decoration: none;
   color: black;
 }
 
 main {
   height: 88vh;
-  display: flex ;
+  display: flex;
 }
 
-#sidebar{
+#sidebar {
   background-color: aquamarine;
-  flex-grow:2;
+  flex-grow: 2;
   text-align: center;
   line-height: 1.5;
 }
 
-#sidebar > ul{
+#sidebar > ul {
   padding: 0;
 }
 
-#sidebar > ul > li{
+#sidebar > ul > li {
   list-style: none;
 }
 
-#sidebar > ul > li > a{
+#sidebar > ul > li > a {
   text-decoration: none;
 }
 
@@ -88,7 +85,41 @@ main {
   width:80%;
 } */
 
- #article {
-  background-color:blueviolet;
-  flex-grow:8;
- }
+.mainContentContainer {
+  width: 90%;
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+.List {
+  padding: 10px 50px;
+  background-color: rgb(225, 221, 228);
+  margin-bottom: 20px;
+  box-shadow: 4px 7px 10px -2px rgba(0, 0, 0, 0.75);
+  border-radius: 6px;
+  transition: box-shadow 1000s ease;
+}
+
+.List:hover {
+  box-shadow: 4px 7px 10px -2px rgba(0, 0, 0, 0.75) inset;
+}
+
+#article {
+  text-align: center;
+  /* flex-grow:8; */
+}
+
+#listDeleteBtn {
+  padding: 5px;
+  background-color: rgb(11, 146, 11);
+  color: white;
+  border: none;
+  border-radius:5px;
+  cursor: pointer;
+}
+
+#listDeleteBtn:hover {
+  background-color: rgb(178, 8, 8);
+}
