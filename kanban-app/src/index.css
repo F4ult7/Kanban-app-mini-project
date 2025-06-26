@@ -1,6 +1,14 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #f4f6f8;
+  /* color: #1f2937 */
 }
 
 a {
@@ -9,6 +17,11 @@ a {
   color: black;
 }
 
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 /* h1,h2,h3,h4,h5,h6{
 
 } */
@@ -35,6 +48,7 @@ li{
   justify-content: space-between;
   background-color: rgb(165, 233, 165);
   padding: 0 30px;
+  color:white;
 }
 
 #navbar img {
@@ -62,16 +76,20 @@ main {
   display: flex;
 }
 
-#sidebar {
+#pageContainer {
+  display: flex;
+}
+
+/* #sidebar {
   background-color: aquamarine;
   flex-grow: 2;
   text-align: center;
   line-height: 1.5;
-}
+} */
 
-#sidebar > ul {
+/* #sidebar > ul {
   padding: 0;
-}
+} */
 
 #sidebar > ul > li {
   list-style: none;
@@ -81,10 +99,13 @@ main {
   text-decoration: none;
 }
 
-/* #sidebar{
-  background-color: aquamarine;
+#sidebar {
+  /* #1e293b */
+  background-color:#1e293b; 
   width: 20%;
-} */
+  height: 100vh;
+ 
+}
 
 /* #article {
   background-color:blueviolet;
@@ -92,40 +113,93 @@ main {
 } */
 
 .mainContentContainer {
-  width: 90%;
+  width: 100%;
   display: flex;
-  gap: 20px;
+  gap: 40px;
   align-items: start;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .List {
-  padding: 10px 50px;
-  background-color: rgb(225, 221, 228);
+  background-color: rgb(182, 227, 252);
   margin-bottom: 20px;
   box-shadow: 4px 7px 10px -2px rgba(0, 0, 0, 0.75);
   border-radius: 6px;
   transition: box-shadow 1000s ease;
 }
 
-.List:hover {
+/* .List:hover {
   box-shadow: 4px 7px 10px -2px rgba(0, 0, 0, 0.75) inset;
-}
+} */
 
 #article {
+  width: 100%;
   text-align: center;
+  background-color: rgb(116, 172, 241);
+  padding: 10px 30px;
+  border-radius: 10px;
   /* flex-grow:8; */
 }
 
-#listDeleteBtn {
+#article h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  /* flex-grow:8; */
+}
+
+#listEditBtn{
+  width: 100%;
+  margin-top: 20px;
   padding: 5px;
   background-color: rgb(11, 146, 11);
   color: white;
   border: none;
-  border-radius:5px;
+  /* border-bottom-left-radius: 5px; */
+  border-bottom-right-radius: 5px;
+  /* border-radius:5px; */
+  cursor: pointer;
+}
+
+
+#listDeleteBtn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: rgb(11, 146, 11);
+  color: white;
+  border: none;
+  border-bottom-left-radius: 5px;
+  /* border-bottom-right-radius: 5px; */
+  /* border-radius:5px; */
   cursor: pointer;
 }
 
 #listDeleteBtn:hover {
   background-color: rgb(178, 8, 8);
 }
+
+.routes{
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.btnContainer{
+  display: flex;
+  gap: 3px;
+}
+
+.itemCard-text{
+  padding: 0;
+}
+/* .task-form {
+  display:flex;
+  flex-direction: column;
+  color:red ;
+}
+.task-form label {
+  display:flex;
+  flex-direction:column;
+} */

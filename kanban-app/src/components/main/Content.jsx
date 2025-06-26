@@ -1,9 +1,8 @@
-import { useState } from "react";
-import kanbanData from "../../assets/kanban.json";
+
 import ItemCard from "./ItemCard";
 
-const Content = () => {
-  const [tasks, setTasks] = useState(kanbanData);
+const Content = ({tasks, setTasks}) => {
+  // const [tasks, setTasks] = useState(kanbanData);
 
   function handleDelete(id) {
     setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
@@ -46,8 +45,7 @@ const Content = () => {
             </div>
           ))}
       </article>
-
-
+      
       {/* DONE CODE BLOCK  */}
       <article id="article">
         <h2>Done</h2>

@@ -1,9 +1,11 @@
-import Main from "../components/main/Main"
+import Content from "../components/main/Content"
 
-const Dashboard = () => {
+
+const Dashboard = ({tasks, setTasks}) => {
+  
   return (
-    <div>
-      <Main />   
+    <div className="dashboard">
+      <Content tasks={tasks} setTasks={setTasks} />
     </div>
   )
 }
