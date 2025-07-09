@@ -5,12 +5,13 @@ const EditPage = ({tasks, handleTaskEdit}) => {
     console.log(tasks)
   const { taskId } = useParams();
   const foundTask = tasks.find((task) => task.id === taskId);
-  console.log(foundTask)
+  // console.log(foundTask)
 
   const navigate = useNavigate();
   // Vars  & Submits
 
   const [formData, setFormData] = useState({
+    id: foundTask.id,
     title: foundTask.title,
     description: foundTask.description,
     assignee: foundTask.assignee,
@@ -18,8 +19,10 @@ const EditPage = ({tasks, handleTaskEdit}) => {
     priority: foundTask.priority,
     createdDate: foundTask.createdDate,
     dueDate: foundTask.dueDate,
-    
+
   });
+
+// console.log(formData)
 
   function handleChange(e) {
     const { name, type, value, checked } = e.target;
