@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "name":"Kostantinos Kazoullis",
+    "link": [{"name": "Github", "link": "https://github.com/F4ult7"}],
+    "course": "Web Development",
+    "type": "Part - Time",
+    "Bootcamp": "IronHack",
+    "startDate": "2025-04-08",
+    "endDate": "2025-10-07"
+  },
+   {
+    "id": "2",
+    "name": "Kingsley Kanu",
+    "link": [{"name": "Github", "link": ""}, {"name": "LinkedIn", "link": ""}],
+    "course": "Web Development",
+    "type": "Part - Time",
+    "Bootcamp": "IronHack",
+    "startDate": "2025-04-08",
+    "endDate": "2025-10-07"
+   }
+]
